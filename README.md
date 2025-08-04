@@ -6,17 +6,14 @@ Langium grammar project for the DSL that I am building as part of my doctoral re
   "MarkEt monitoRing Language for surveIllaNce" -- MERLIN!, 
 ```
 
-<div style="text-align: center;">
-<p>
-  <img src="https://raw.githubusercontent.com/echarlesgrasby/dissertation-dsl-grammar/refs/heads/master/assets/merlin.png" style="width: 70%;">
+![MerlinLang]("https://raw.githubusercontent.com/echarlesgrasby/dissertation-dsl-grammar/refs/heads/master/assets/merlin.png")
 
-  *Logo co-designed using GPT-4-turbo (OpenAI), via ChatGPT, April 2025.*
-<p>
-</div>
-
+```
+*Logo co-designed using GPT-4-turbo (OpenAI), via ChatGPT, April 2025.*
+```
 ## Author
 
-Please see [ericgrasby.xyz](https://ericgrasby.xyz/academic) for the author's academic credentials. The author's GitHub can be found [here - echarlesgrasby]((https://github.com/echarlesgrasby).
+Please see [ericgrasby.xyz](https://ericgrasby.xyz/academic) for the author's academic credentials. The author's GitHub can be found [here - echarlesgrasby](https://github.com/echarlesgrasby).
 
 ## News
 
