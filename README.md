@@ -6,9 +6,9 @@ Langium grammar project for the DSL that I am building as part of my doctoral re
   "MarkEt monitoRing Language for surveIllaNce", 
 ```
 
-<div align="center">
+<div style="text-align: center;">
 <p>
-  <img src="https://raw.githubusercontent.com/echarlesgrasby/dissertation-dsl-grammar/refs/heads/master/assets/merlin.png" width="415" height="412">
+  <img src="https://raw.githubusercontent.com/echarlesgrasby/dissertation-dsl-grammar/refs/heads/master/assets/merlin.png" style="width: 70%;">
 
   *Logo co-designed using GPT-4-turbo (OpenAI), via ChatGPT, April 2025.*
 <p>
