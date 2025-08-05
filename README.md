@@ -2,6 +2,8 @@
 
 Langium grammar project for the DSL that I am building as part of my doctoral research. Codenamed MERLIN, which is a nod to H. Beam Piper's novel *The Cosmic Computer*.
 
+I'm still currently laying the groundwork so that I can plan the construction of this grammar. More to come!
+
 ```
   "MarkEt monitoRing Language for surveIllaNce" -- MERLIN!, 
 ```
