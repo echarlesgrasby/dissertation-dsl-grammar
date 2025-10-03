@@ -17,12 +17,11 @@ I'm still currently laying the groundwork so that I can plan the construction of
 
 Please see [ericgrasby.xyz](https://ericgrasby.xyz/academic) for the author's academic credentials. The author's GitHub can be found [here - echarlesgrasby](https://github.com/echarlesgrasby).
 
-## News
+## News Updates
 
-### 2025-08-04 Update
+### Fall 2025 Milestones
 
-I am working on completing the proposal document (essentially the first 2 chapters of my dissertation) in order to perform my proposal defense this fall. Once the proposal is complete, I can break ground on the actual prototype application. 
-In the meantime, I have been working on completing a Delphi study with a group of experts that match the ideal user persona for this kind of system. I anticipate that this semester (Fall 2025) will include completion of the following milestones:
+Project milestones for the Fall 2025 semester include:
 
 1. Complete Delphi Study round #2
     1. - [ ] Round #2 officially **closes on 10/10/2025**
@@ -32,4 +31,14 @@ In the meantime, I have been working on completing a Delphi study with a group o
     1. - [X] Passed on September 30, 2025 with a unanimous "move forward" vote from my committee
 6. Write and complete chapter 3 of dissertation (requirements modeling and analysis)
 7. Start gathering test data for prototype
+
+
+### 2025-08-04
+
+I am working on completing the proposal document (essentially the first 2 chapters of my dissertation) in order to perform my proposal defense this fall. Once the proposal is complete, I can break ground on the actual prototype application. 
+In the meantime, I have been working on completing a Delphi study with a group of experts that match the ideal user persona for this kind of system. I anticipate that this semester (Fall 2025) will include completion of the milestones listed above (Fall 2025 Milestones)
+
+### 2025-10-03
+
+As you'll see in the checklist, I officially completed my dissertation proposal defense on 09.30.2025! That was a huge feeling of accomplishment for me. I talked for probably 40 minutes straight (have not done that in quite a while!). My next stop is to close out the Delphi study at the end of next week and start processing all of the results into proper software requirements. More to come later this month!
 
