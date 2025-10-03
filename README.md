@@ -25,9 +25,11 @@ I am working on completing the proposal document (essentially the first 2 chapte
 In the meantime, I have been working on completing a Delphi study with a group of experts that match the ideal user persona for this kind of system. I anticipate that this semester (Fall 2025) will include completion of the following milestones:
 
 1. Complete Delphi Study round #2
-2. Write and distribute round #2 whitepaper to panel participants
-3. Synthesize functional requirements document from Delphi Study results
-4. Complete (and pass!) dissertation proposal defense in September 2025
-5. Write and complete chapter 3 of dissertation (requirements modeling and analysis)
-6. Start gathering test data for prototype
+  - [] Round #2 officially **closes on 10/10/2025**
+3. Write and distribute round #2 whitepaper to panel participants
+4. Synthesize functional requirements document from Delphi Study results
+5. Complete (and pass!) dissertation proposal defense in September 2025
+  - [X] Passed on September 30, 2025 with a unanimous "move forward" vote from my committee
+6. Write and complete chapter 3 of dissertation (requirements modeling and analysis)
+7. Start gathering test data for prototype
 
