@@ -48,8 +48,7 @@ assignment_stmt: NAME "=" expr SEMICOLON
 
 arg_list: expr ("," expr)*
 
-join_expr: 
-	"join" "(" NAME "," NAME ")"
+join_expr: "join" "(" NAME "," NAME ")"
 	
 filter_expr: "filter" "(" NAME "," condition ")"
 aggregate_expr: "agg" "(" NAME "," agg_spec ")"
