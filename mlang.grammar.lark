@@ -1,0 +1,115 @@
+// ------------------------------------------------------------------------------------------------
+//		Monitor Lang ("mlang") Grammar - v0.1
+//		AUTHOR: Eric C. Grasby, MSIQ
+//
+//    This grammar file is developed, in part, to support the author's dissertation work
+//    see: https://github.com/echarlesgrasby/dissertation
+// ------------------------------------------------------------------------------------------------
+
+//entry point to any .mlang program
+start: program
+
+program: input_block analysis_block output_block
+
+input_block: INPUT "{" input_stmt* "}"
+analysis_block: ANALYSIS "{" analysis_stmt* "}"
+output_block: OUTPUT "{" output_stmt* "}"
+
+
+// ------------------------------------
+// INPUT grammar logic
+// ------------------------------------
+
+// handle both whole datasets and scalar values, depending upon what the user wishes
+input_stmt: dataset_decl SEMICOLON | scalar_decl SEMICOLON
+
+dataset_decl: DATASET NAME "=" load_expr
+scalar_decl: SCALAR NAME "=" value
+load_expr: LOAD "(" STRING ")"
+
+
+// ------------------------------------
+// ANALYSIS grammar logic
+// ------------------------------------
+
+import_list: NAME ("," NAME)*
+import_stmt: IMPORT import_list SEMICOLON
+
+analysis_stmt: import_stmt
+	| assignment_stmt
+
+assignment_stmt: NAME "=" expr SEMICOLON
+
+?expr: join_expr			//join multiple datasets on pre-defined identifiers (@See mlang.link)
+	| filter_expr			//filter a set of records to a subset
+	| aggregate_expr		//compute an aggregate value
+	| function_call			//call a predefined function in the target language
+	| NAME					//identifier
+
+arg_list: expr ("," expr)*
+
+join_expr: 
+	"join" "(" NAME "," NAME ")"
+	
+filter_expr: "filter" "(" NAME "," condition ")"
+aggregate_expr: "agg" "(" NAME "," agg_spec ")"
+function_call: NAME "(" arg_list? ")"
+
+
+condition: NAME OP value
+
+?value: NUMBER 
+	| STRING
+	| NAME
+	
+OP: ">" | "<" | "==" | ">=" | "<=" | "!=" | "<>"
+
+agg_spec: NAME "(" NAME ")"
+
+
+// ------------------------------------
+// OUTPUT grammar logic
+// ------------------------------------
+
+output_stmt: WRITE "(" NAME "," STRING ")" SEMICOLON
+
+
+// -------------------------------------
+// LANG KEYWORDS
+// -------------------------------------
+
+SEMICOLON: ";"
+
+//case insensitive keywords
+
+INPUT: /(?i)input/
+LOAD: /(?i)load/
+ANALYSIS: /(?i)analysis/
+OUTPUT: /(?i)output/
+
+DATASET: /(?i)dataset/
+SCALAR: /(?i)scalar/
+IMPORT: /(?i)import/
+WRITE: /(?i)write/
+
+// These might be removed, not sure yet - ecg0122
+CSV: /(?i)csv/
+SAS: /(?i)sas/
+GRAPH: /(?i)graph/
+
+
+// end case insensitive keywords
+
+// specific logic so that the transpiler ignores comments (C-style `//` comments)
+COMMENT: /\/\[^\n]*/
+
+// -------------------------------------
+// Lark internal imports 
+// -------------------------------------
+%import common.ESCAPED_STRING -> STRING
+%import common.CNAME -> NAME
+%import common.NUMBER
+%import common.WS
+
+%ignore COMMENT
+%ignore WS
